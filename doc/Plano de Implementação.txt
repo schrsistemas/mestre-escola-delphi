@@ -1,0 +1,22 @@
+Inicializado repositório do projeto de desafio - Delphi
+
+1º Etapa:
+	- Criação e configuração do projeto Delphi - estrutura geral;
+	- Montado estrutura de diretórios para melhor organização do projeto;
+	- Criado formulários e datamodulos bases para uso no decorrer da implementação do projeto;
+	- Implementado protótipo - menu principal do sistema e acesso de chamada as telas a serem utilizadas;
+	- Implementado módulo configurador de acesso a base de dados, com a opção de escolha: MySQL ou PostgreSQL;
+	
+2º Etapa:
+	- Implementado cadastros básicos para uso depois no módulo de controle;
+
+3º Etapa:
+	- Módulo de Controle
+		- Lançamento de presença / falta - > ao Aluno (Curso / Disciplina);
+		- Lançamento de notas - > ao Aluno (Curso / Disciplina);
+
+4º Etapa:
+	- Relatório presencial do aluno;
+	- Relatórios de notas do aluno;
+	- Listas diversas;
+	
