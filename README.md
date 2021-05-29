@@ -10,4 +10,4 @@ Estrutura de diretórios:
 - rel\ 	- > arquivos de relatório;
 - bin\ 	- > arquivos executaveis;
 
-Ass: Daniel @schrsistemas
+Ass: Daniel
