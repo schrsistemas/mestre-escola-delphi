@@ -1,0 +1,59 @@
+SCRIPT DE OBJECOES - ICON ENGINE
+
+---
+
+OBJECAO 1: "VOU PENSAR"
+
+Resposta:
+"Claro, sem problema. Posso te mostrar funcionando no seu sistema rapidinho? Ai voce decide com mais seguranca."
+
+---
+
+OBJECAO 2: "NAO TENHO INTERESSE"
+
+Resposta:
+"Tranquilo, e mais uma melhoria visual mesmo. Mas posso te mostrar em 1 minuto, se nao gostar a gente nem segue."
+
+---
+
+OBJECAO 3: "TA CARO"
+
+Resposta:
+"Entendo. Mas e um valor pequeno e melhora o uso do sistema todo dia. A maioria dos clientes acaba compensando so na produtividade."
+
+---
+
+OBJECAO 4: "MEU SISTEMA JA FUNCIONA"
+
+Resposta:
+"Sim, e a ideia nao e trocar nada. E so melhorar o visual e facilitar o uso, mantendo tudo como esta."
+
+---
+
+OBJECAO 5: "DEPOIS EU VEJO"
+
+Resposta:
+"Beleza. Posso deixar ativado em teste pra voce ver no dia a dia? Ai voce decide depois com calma."
+
+---
+
+OBJECAO 6: "NAO QUERO MEXER NO SISTEMA"
+
+Resposta:
+"Pode ficar tranquilo, nao altera nada do sistema. E so visual mesmo, totalmente seguro."
+
+---
+
+OBJECAO 7: "VOU FALAR COM O SOCIO"
+
+Resposta:
+"Perfeito. Se quiser, eu ativo em teste e voce ja mostra pra ele funcionando. Fica bem mais facil de decidir assim."
+
+---
+
+OBJETIVO:
+- Reduzir resistencia
+- Evitar confronto
+- Levar para teste
+- Fechar de forma leve
+
