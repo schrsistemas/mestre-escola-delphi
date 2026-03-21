@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>License Admin Panel</title>
+  <style>
+    body { font-family: Segoe UI; background:#1e1e1e; color:#fff; }
+    .container { width: 800px; margin: auto; }
+    input, button { padding:8px; margin:5px; }
+    table { width:100%; margin-top:20px; border-collapse: collapse; }
+    td, th { border:1px solid #444; padding:8px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>License Admin</h2>
+
+  <h3>Create License</h3>
+  <input id="client" placeholder="Client" />
+  <input id="type" placeholder="Type (FREE/PRO/AI)" />
+  <input id="expires" placeholder="YYYY-MM-DD" />
+  <button onclick="createLicense()">Create</button>
+
+  <h3>Licenses</h3>
+  <button onclick="loadLicenses()">Refresh</button>
+  <table id="tbl">
+    <tr><th>ID</th><th>Client</th><th>Type</th><th>Expires</th><th>Status</th></tr>
+  </table>
+</div>
+
+<script>
+const API = 'http://localhost:3000';
+
+function createLicense() {
+  fetch(API + '/license', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({
+      client: document.getElementById('client').value,
+      type: document.getElementById('type').value,
+      expires: document.getElementById('expires').value
+    })
+  }).then(r=>r.json()).then(loadLicenses);
+}
+
+function loadLicenses() {
+  fetch(API + '/license')
+    .then(r=>r.json())
+    .then(data => {
+      const tbl = document.getElementById('tbl');
+      tbl.innerHTML = '<tr><th>ID</th><th>Client</th><th>Type</th><th>Expires</th><th>Status</th></tr>';
+      data.forEach(l => {
+        tbl.innerHTML += `<tr>
+          <td>${l.id}</td>
+          <td>${l.client}</td>
+          <td>${l.type}</td>
+          <td>${l.expires}</td>
+          <td>${l.active}</td>
+        </tr>`;
+      });
+    });
+}
+</script>
+</body>
+</html>
